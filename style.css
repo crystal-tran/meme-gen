@@ -1,0 +1,156 @@
+
+/*color changing background animation for form field*/
+.background {
+  background: linear-gradient(0deg, #5cbb85, #607aff, #d564e2);
+  background-size: 600% 600%;
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:49% 0%}
+  50%{background-position:52% 100%}
+  100%{background-position:49% 0%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:49% 0%}
+  50%{background-position:52% 100%}
+  100%{background-position:49% 0%}
+}
+@keyframes AnimationName {
+  0%{background-position:49% 0%}
+  50%{background-position:52% 100%}
+  100%{background-position:49% 0%}
+}
+
+/*styles for meme generator and memes generated container */
+.container {
+  display: flexbox;
+  height: fit-content;
+  margin: 15px 0;
+  border-radius: 30px;
+}
+
+/*Styles and positioning of main header */
+.topHeader {
+  color: white;
+  padding: 30px 0;
+  height: 120px;
+  margin: 30px auto;
+}
+
+
+/*Styles for text*/
+.heading {
+  color: #dfdfdf;
+  display: block;
+  line-height: 40px;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+h1.heading {
+  letter-spacing: 3px;
+  font-size: 30px;
+}
+
+h2.heading,
+h3.heading {
+  font-size: 18px;
+}
+
+h3.heading {
+  color: teal;
+  letter-spacing: 3px;
+}
+
+
+/*Sizing and positioning of user-input fields*/
+.container input,
+.row textarea {
+  display: block;
+  justify-content: center;
+  margin: 0px auto 30px auto;
+}
+
+.row textarea {
+  width: 30rem;
+}
+
+/*Styles for submit and delete buttons */
+.button {
+  border-radius: 10px;
+  display: block;
+  text-transform: uppercase;
+  width: 150px;
+
+}
+.submit-button {
+  border: none;
+}
+.submit-button:hover {
+  color: rgb(70, 113, 252);
+}
+
+/* Styles for added meme container */
+.meme-container {
+  display: inline-block;
+  width: 400px;
+  margin: 15px;
+  position: relative;
+  text-align: center;
+}
+
+/*Styles for the meme-image*/
+.meme {
+  max-width: 100%;
+  position: relative;
+  width: 400px;
+}
+
+/*Styles and positioning for meme text(top and bottom)*/
+.text {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  font-size: 2.2em;
+  max-width: 100%;
+  position: absolute;
+  z-index: 2;
+}
+
+/*Position of top text on meme-image */
+.top {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+/*Position of bottom text on meme-image */
+.bottom {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+/*Style for delete button*/
+.delete-button {
+  border: 1px solid black;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  margin: 0px auto;
+  transform: translateX(-50%);
+}
+
+.delete-button:hover {
+  color: red;
+  border: 1px solid red;
+}
+
+
